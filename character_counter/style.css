@@ -1,0 +1,51 @@
+html, body{
+    margin: 0;
+    height: 100vh;
+}
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a7d7, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container{
+    background-color:aliceblue;
+    padding: 3%;
+    border-radius: 5%;
+    width: 25%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style:normal;
+    font-size: large;
+    text-align: center;
+}
+textarea{
+    all:unset;
+    width: 100%;
+    overflow-wrap: break-word;
+    border: #000000 solid 2px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px  rgb(231, 60, 126,0.5);
+    padding: 5%;
+}
